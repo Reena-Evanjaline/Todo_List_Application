@@ -1,0 +1,28 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "public/**",
+        "use": "@vercel/static"
+      },
+      {
+        "src": "api/index.php",
+        "use": "@vercel/php"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/api/index.php" }
+    ],
+    "env": {
+      "APP_ENV": "production",
+      "APP_KEY": "base64:VajuFUfas4JQr0h++ckZgQFpThsuaF9UTRkbEixt/RI=",
+      "APP_DEBUG": "false",
+      "APP_URL": "https://your-vercel-deployment.vercel.app",
+      "DB_CONNECTION": "mysql",
+      "DB_HOST": "127.0.0.1",
+      "DB_PORT": "3306",
+      "DB_DATABASE": "your-database-name",
+      "DB_USERNAME": "your-database-username",
+      "DB_PASSWORD": "your-database-password"
+    }
+  }
