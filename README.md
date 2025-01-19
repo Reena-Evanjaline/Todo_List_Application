@@ -38,19 +38,25 @@ Node.js & npm (for optional front-end assets)
     Duplicate the .env.example file and rename it to .env.
     Configure your database details in the .env file:
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=your_database_name
-DB_USERNAME=your_database_user
-DB_PASSWORD=your_database_password
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=your_database_name
+        DB_USERNAME=your_database_user
+        DB_PASSWORD=your_database_password
 
 4. Generate the application key:
-    php artisan key:generate
+
+        php artisan key:generate
+
 5. Run migrations to set up the database schema:
-    php artisan migrate
+
+        php artisan migrate
+
 6. Serve the application locally:
-    php artisan serve
+
+        php artisan serve
+
 By default, the application will be accessible at http://127.0.0.1:8000
 
 # Deployment Steps
@@ -66,7 +72,7 @@ Due to challenges faced while deploying the application on online hosting platfo
 4. Run php artisan config:cache and php artisan route:cache.
 
 # Run the application locally:
-    php artisan serve
+        php artisan serve
 
 
 # Thank you for reviewing the project! Feel free to reach out for any questions or feedback.
